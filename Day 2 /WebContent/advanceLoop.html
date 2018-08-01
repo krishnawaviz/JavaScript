@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+var array = ['krishna', 'veer' , "deepanker", 'aman', "shagun",'ishan'];
+
+var arr = [1,2,3];
+
+var arrayObject = {
+		name : 'krishna',
+		age : 26,
+		gender : 'male',
+		
+};
+document.write('Index or Property Name or key'+ "<br>");
+for(var i in arr){
+	
+	document.write(i+ " " );document.write(" <br>");
+}
+document.write('Value of Property Name or Value at specific index'+ "<br>");
+for(var j of arr){
+	document.write(j+" <br>" );
+}
+
+document.write("Some More Example like this <br>")
+for(var k in array){
+	document.write(k + " <br>")
+}
+
+document.write('Value of Property Name or Value at specific index'+ "<br>");
+for(var m of array){
+	document.write( m + " <br>" );
+}
+
+document.write("we can use like this in an array <br>");
+var promise = {
+		name : 'krishna',
+		array : [1,2,3,4,5,6]
+};
+document.write(promise['array']);
+
+</script>
+</body>
+</html>

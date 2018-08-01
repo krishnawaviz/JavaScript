@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> array of object</title>
+</head>
+<body>
+<p id = "array"></p>
+<h1> Using keys() from Array</h1>
+<p id = "array1"></p>
+<h1> Copy an array using slice() from Array</h1>
+<p id = "copy"></p>
+<h1>Check isArray() </h1>
+<p id = 'showArray'></p>
+<script >
+
+var array = [];
+array.push('krishna','veer','shagun','ankit','aman');
+document.getElementById('array').innerHTML = array;
+
+
+var promise = {
+		name : 'krishna',
+		age : 26,
+		gender : 'male'
+};
+document.write(promise['name']);
+
+
+document.getElementById('array1').innerHTML = (Object.keys(promise));
+
+var arrCopy = array.slice();
+document.getElementById('copy').innerHTML = arrCopy ;
+var y = Array.isArray(array);
+document.getElementById('showArray').innerHTML = y;
+
+</script>
+
+
+
+
+
+</body>
+</html>

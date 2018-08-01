@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Creating Array</h3>
+	<p id="arr1"></p>
+
+	<h3>Creating Array</h3>
+	<p id="yea"></p>
+
+	<h3>Print first element</h3>
+	<p id="arr2"></p>
+
+	<h3>Print last element</h3>
+	<p id="arr3"></p>
+
+	<h3>Add element in the array</h3>
+	<p id="push"></p>
+
+	<h3>Add first element in array</h3>
+	<p id="addfirst"></p>
+
+
+	<h3>Remove last element</h3>
+	<p id="remove"></p>
+
+	<h3>Remove first element</h3>
+	<p id="remove1"></p>
+
+	<h3>indexOf()</h3>
+	<p id="index"></p>
+
+	<h3>Remove Element index based</h3>
+	<p id="index1"></p>
+
+
+	<h3>Remove Element index based</h3>
+	<p id="index2"></p>
+
+
+	<h3>Copy Array  one to other</h3>
+	<p id="copyarry"></p>
+
+	<h3>Remove first element</h3>
+	<p id="remove1"></p>
+
+	<script>
+		var year = new Array(1990, 2000, 2001, 2002, 2003);
+		document.getElementById('yea').innerHTML = year;
+
+		var arr = [ 'krishna', 'veer', 'shagun', 'ankit' ];
+		document.getElementById('arr1').innerHTML = arr;
+
+		var first = arr[0];
+		document.getElementById('arr2').innerHTML = first;
+
+		var last = arr[arr.length - 1];
+		document.getElementById('arr3').innerHTML = last;
+
+		var newLength = arr.push('Aman');
+		document.getElementById('push').innerHTML = arr;
+
+		/* var arr = arr.unshift("Ishan");
+		documnet.getElementById('addfirst').innerHTML = arr ;  */
+
+		var remove = arr.pop();
+		document.getElementById('remove').innerHTML = arr;
+
+		var remove1 = arr.shift();
+		document.getElementById('remove1').innerHTML = arr;
+
+		var index = arr.indexOf("shagun");
+		document.getElementById('index').innerHTML = index;
+
+		// 		if(arr.indexOf("shagun") === index){
+		// 			document.getElementById('out').innerHTML = "helloo";
+		// 		}
+
+		var remove1 = arr.splice(2, 1);
+		document.getElementById('index1').innerHTML = arr;
+
+		var remove1 = year.splice(2, 3);
+		document.getElementById('index2').innerHTML = year;
+		
+		
+		var arrCopy = arr.slice();
+		document.getElementById('copyarry').innerHTML = arrCopy;
+		
+	</script>
+</body>
+</html>

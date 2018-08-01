@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> math Example </title>
+</head>
+<body>
+<h1> Math is not a Constructor it has static property</h1>
+
+<h2>Math.LN10 value present </h2>
+<p id = 'math'> </p>
+<div></div>
+
+<h3>The Math.abs() function returns the absolute value of a number</h3>
+
+<p id = 'abs'></p>
+
+
+<h3>The Math.pow()  function returns the base to the exponent power</h3>
+
+<p id = 'pow'></p>
+
+<h3>
+
+The Math.exp() function returns ex, where x is the argument, and e is Euler's </h3>
+
+<p id = 'expo'></p>
+
+
+<script type="text/javascript">
+
+
+function lognValue(){
+	return Math.LN10;
+}
+document.getElementById('math').innerHTML = lognValue();
+
+var print = document.querySelector('div');
+print.textContent = lognValue();
+
+function absolute(a ,b){
+	return Math.abs(a - b);
+}
+var printabs = document.querySelector('#abs');
+printabs.textContent = absolute(3 ,7);
+
+var printpow = document.querySelector('#pow');
+printpow.textContent = Math.pow(4,2);
+
+
+var printexpo = document.querySelector('#expo');
+printexpo.textContent = Math.exp(2);
+
+</script>
+
+
+</body>
+</html>

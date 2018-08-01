@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h3>Current Date</h3>
+	<p id='date'></p>
+	
+	<h3>Given Date with details</h3>
+	<p id='date1'></p>
+
+<h3>Given Date with details</h3>
+	<p id='date2'></p>
+	<h2> date with UTC</h2>
+	<p id = 'utc'></p>
+	
+	<h2> Date of birth   </h2>
+	<p id = 'bday'> </p>
+	<script type="text/javascript">
+		var date = new Date();
+
+		document.getElementById('date').innerHTML = date.toUTCString();
+		
+		
+		
+		var date1 = new Date(2018 , 09,23,01,15,30,33);
+		document.getElementById('date1').innerHTML = date1;
+		
+		var date2 = new Date(Date.UTC(95 , 4,0,0,0,0,0));
+		document.getElementById('date2').innerHTML = date2.toUTCString();
+		
+		var utcDate = new Date(Date.UTC(2018, 11, 1, 0, 0, 0));
+		
+		document.getElementById('utc').innerHTML = utcDate.toUTCString();
+		
+		
+		var bday = new Date('JULY 15,1995');
+		var bdate = bday.getDate();
+		document.getElementById('bday').innerHTML = bdate;
+	</script>
+</body>
+</html>
