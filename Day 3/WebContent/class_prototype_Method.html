@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<b>Class Declaretion  </b>
+<p id = 'p1'></p>
+<script type="text/javascript">
+class Rectangle{
+	constructor(h , w){
+		this.h = h;
+		this.w = w;
+	}
+	get area(){
+		return this.calArea();
+	}
+	calArea(){
+		return this.h * this.w;
+	}
+}
+const output = new Rectangle(10,10);
+
+var print = document.querySelector('#p1');
+print.textContent = "Area of Reactangle = "+output.area + " Sqaure";
+
+</script>
+</body>
+</html>

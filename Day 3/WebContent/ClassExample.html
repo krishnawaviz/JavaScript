@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>class Example</title>
+</head>
+<body>
+	<p>
+		<b> class Declaration in JavaScript</b>
+	</p>
+
+	<p id='p1'></p>
+	<b>output</b>
+	<p id='p'></p>
+	<b>Class Expression Without Name of class</b>
+	<p id='p2'></p>
+
+	<b>Class Expression With Name of class</b>
+	<p id='p3'></p>
+
+
+	<script type="text/javascript">
+   class Polygon {
+	 constructor(height , width){
+		this.area = height * width;
+	 }
+ };
+ var poly = new  Polygon(5,5);
+ 
+ var print = document.querySelector('#p');
+ 
+ print.textContent = "Area of Polygon = "+poly.area ;
+ 
+ 
+ var classExamp = document.querySelector('#p1');
+
+ classExamp.textContent = " class Polygon {"
+	 +"constructor(height , width){"
+		+"this.area = height * width;"
++	 '}'
+ +'}'
++" var poly = new  Polygon(5,5);" ;
+
+let Reactangle = class{
+	constuctor(height , width){
+		this.height = height;
+		this.width = width;
+	}
+};
+
+var print =document.querySelector('#p2');
+print.textContent ="Name of the Expression Class = "+ Reactangle.name;
+
+
+var Rectangle = class Rectangle2{
+	
+};
+var print =document.querySelector('#p3');
+print.textContent ="Name of the Expression Class = "+ Rectangle.name;
+
+
+ </script>
+
+
+</body>
+</html>

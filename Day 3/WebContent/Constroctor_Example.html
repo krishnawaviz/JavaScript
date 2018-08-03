@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Constuctor in Example</title>
+</head>
+<body>
+<b> Class With Constructor </b>
+<p id = "p"></p>
+
+<b> Class Without  Constructor </b>
+<p id = "p1"></p>
+
+<script type="text/javascript">
+class Polygon{
+	constructor(){
+		this.name = 'Krishna';
+	}
+}
+var poly = new Polygon();
+
+var print = document.querySelector('#p');
+print.textContent = "Constructor calling  = "+ poly.name;
+
+
+class Constrt{
+	 getName(){
+		 return "Hi i am without Constructor define";
+	 }
+};
+
+var c = new Constrt();
+var print = document.querySelector('#p1');
+print.textContent =  c.getName();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>static method </title>
+</head>
+<body>
+<b> Static Method in Class</b>
+<p id ='static1'></p>
+
+<script type="text/javascript">
+class StaticMethod{
+	
+	
+	static getDistance(){
+		return " I am in static Method of the class ";
+		
+	}
+};
+
+var print = document.querySelector("#static1");
+print.textContent = StaticMethod.getDistance();
+</script>
+</body>
+</html>
