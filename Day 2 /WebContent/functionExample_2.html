@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> function example </title>
+</head>
+<body>
+<h2> Nested Function in the JS</h2>
+<p id = 'closure'></p>
+
+<h2> Using argument Length</h2>
+<p id = 'argument'></p>
+<script type="text/javascript">
+function outSide(a){
+	function inSide(b){
+		function nextInSide(c){
+			return a+b+c;
+		}
+		return nextInSide;
+	}
+	return inSide;
+}
+document.getElementById('closure').innerHTML = outSide(2)(3)(4);
+
+function argumentPass(separator){
+	var result = '';
+	var i;
+	for(i = 0 ; i < arguments.lenght; i++){
+		result += arguments[i]+separator; 
+	}
+	return result;
+	
+}
+
+argumentsPass(',', 'like','love','sweet');
+//document.getElementById('argument').innerHTML = result ;
+var outprint = document.querySelector('argument');
+
+outprint.textContent = argumentsPass(';', 'like','love','sweet');
+
+</script>
+</body>
+</html>

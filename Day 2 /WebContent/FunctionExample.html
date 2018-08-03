@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function example ]</title>
+</head>
+<body>
+	<h1>function Defining</h1>
+	<p id="first"></p>
+
+
+
+	<h2>function Expression</h2>
+	<p id='expression'></p>
+
+	<h3>factorial program using function expression</h3>
+	<p id='fact'></p>
+
+	<h3>Recursive Function </h3>
+	<p id='recursive'></p>
+
+	<script type="text/javascript">
+		function firstFunction(num1, num2) {
+			return num1 * num2;
+		}
+		var first = document.querySelector('#first');
+		first.textContent = firstFunction(5, 6);
+
+		var expression = function(a, b) {
+			return a * b;
+
+		}
+		var exp = document.querySelector('#expression');
+		exp.textContent = expression(5, 6);
+
+		var factorial = function fact(n) {
+			return n < 2 ? 1 : n * fact(n - 1);
+		};
+		var factprint = document.querySelector("#fact");
+		factprint.textContent = factorial(5);
+		
+		
+		
+		function recursive(x){
+			if(x>= 10){
+				return ;
+				document.write(x);
+			}
+			document.write(x+" "+ "before function call again"+ "<br>");
+			recursive(x+1);
+			document.write(x+" ");
+		}
+		
+		recursive(0);
+		document.write("<br><br>");
+		function loop(i){
+			if(i < 0){
+				return;
+			}
+			document.write("begin :" + i);
+			loop(i - 1);
+			document.write('end : '+ i); // the value of i is present inside function 
+		}
+		
+		loop(3);
+		document.write("<br>");
+	//	document.write('end : '+ i); // outside not accsess if changes inside function;
+		  function myFunction(theObject){
+			  theObject.make = 'Toyota';
+			  
+		  }
+		  
+		  var myCar = {make : 'Honda', model : '2018' , color : 'red'};
+		  var x , y;
+		  
+		  x = myCar.make;
+		  document.write(x+ "<br>");
+		  
+		  myFunction(myCar);
+		  y = myCar.make;
+		  document.write(y);
+		
+		  document.write("<br><br>");
+		  
+		  function myFunctionChange(name){
+			  var name2 = 'maneesh sir';
+			  
+			var  name = 'mohan';
+			  document.write(name + " ");
+			  
+		  }
+		  
+		  
+		  document.write(name+ "  ");
+		  var name = 'krishna';
+		  document.write(name+ " ");
+		  
+		 myFunctionChange(name);
+		 
+		 // document.write(name2 + " ");
+		 
+		
+		document.write(name+ "<br>");
+		
+		// calling function for hoisted
+		
+		document.write( "hoisted function used result ="+square(5) +"<br>");
+		
+		function square(num){
+			return num*num;
+		}
+		
+		
+		// Function Expression does not use hoisted
+		document.write(square1+ "  hello");
+		document.write(square1(5)+" not hoisted");
+		var square1 = function(num){
+			return num*num;
+		}
+		document.write("<br>");
+		
+		
+		
+		
+		 
+		
+		
+		
+		
+		
+	</script>
+</body>
+</html>

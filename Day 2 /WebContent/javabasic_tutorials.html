@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+<button>cleck me </button><br>
+
+
+<script>
+function myDataType(){
+	 var a = Boolean(false);
+	 document.write(a+"<br>");
+	 
+	 
+	 if(a){
+		 document.write("<br>"+"hi i am in if body");
+	 }
+	 document.write('hello <br>');
+	 
+	 var str = 'krishna';
+	 document.write(str.substr(2,6)+"<br>");
+	 
+	 var str = 'front'+20+"22";
+	 document.write(str+"<br>"+typeof str+"<br>");
+	 
+	 var str1  = 20+5+"3";
+	 document.write(str1+"<br>"+ typeof str1+"<br>");
+	 
+	 
+	 
+	 var str2 = '23'+'23';
+	 document.write(str2+"<br>"+ typeof str2+"<br>");
+	 
+	 var newStr1 = Number(str1);
+	 document.write(newStr1+"<br>"+ typeof newStr1+"<br>");
+	 
+	 var newStr2 = Number(str2);
+	 document.write(newStr2+"<br>"+ typeof newStr2+"<br>");
+	 
+	 
+	 
+	 
+	 
+}
+myDataType();
+
+document.querySelector('button').onclick = function(){
+	alert('button on click ');
+}
+
+
+</script>
+</body>
+</html>

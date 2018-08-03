@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>operators example</title>
+</head>
+<body>
+	<script type="text/javascript">
+function arithmaticExpression(){
+	
+	document.write(" 1=> Addition Rules in JavaScript  <br><br>");
+	
+	document.write(1 + 2 +" =  (1 + 2) Addition of Number and Number <br>");
+	document.write('1' + 2 +" = ('1' + 2)    Addition of String and Number (concatinate)<br>");
+	document.write(true + 2 +" = (true + 2) Addition Boolean and  Number <br>");
+	document.write(true +"  hii"+" = (true + 'hii') Addition of String and Boolean <br>");
+	document.write(1 + 2 +" string"+" = (1 + 2 + 'string')			 Addition of Number and String  <br>");
+	document.write(1 + 2 +" =   (1 + 2 ) Addition of Number <br>");
+	document.write(1 + 2 +"        = Addition of number <br><br>");
+	
+	document.write(" 2=> Substraction Rules in JavaScript <br><br>");
+
+	document.write(3 - 2  +" = Substraction of  Number ( 3 - 1)<br>" );
+	document.write(4 - 6 +" = Substraction of  Number ( 4 - 6)<br>" );
+	document.write('foo' - 6 +  "    = Substraction of  Number  and String ( 'foo' - 6)<br><br>" );
+	
+	
+	document.write("3=>  Division Rules in JavaScript <br><br>");
+	
+     document.write(4 / 2 +"  =(4 / 2) Number and Number (4 / 2)= Number <br> ");
+     document.write(4 / 2.0 +"  = Number and Number (4 / 2.0)= Number <br> ");
+     document.write(1 / 2 +"  = Number and Number (1 / 2)= Number <br> ");
+     document.write(4.0 / 2 +"  = Number and Number (4.0 / 2) = Number <br> ");
+     document.write(4 / 0 +"  = Number and Zero (4 / 0)<br> ");
+     document.write(4 / 0.0 +"  = Number and Zero with decimal (4 / 0.0) <br> ");
+     document.write(4 / -0 +"  = Number and negative Zero(4 / -0) <br> <br>");
+     
+     document.write(" 4=> Multipication Rules in JavaScript  <br><br>");
+     
+     document.write(2 * 2 + " = (2 * 2) Number and Number  <br>");
+     document.write(2 * 2.0 + " = (2 * 2.0) Number and float Number <br> ");
+     document.write(2 * (-2) + " = (2 * (- 2)) Number and negative Number <br> ");
+     document.write(2 * - 2 + " = (2 * - 2) Number and negative Number <br> ");
+     document.write(2 * 0 + " = (2 * 0) Number and Number <br> ");
+     document.write(2 * Infinity + " = (2 * Infinity) Number and Infinity <br> ");
+     document.write(2 * "mul" + " = (2 * 'mul') Number and String <br> <br>");
+     
+     document.write("5=>  Reminder  Rules in JavaScript  <br><br>");
+     
+     document.write(1 % 2 +" = (1 % 2) Number and Number <br>" );
+     document.write(1 % 2.0 +" = (1 % 2.0) Number and float Number <br>" );
+     document.write(5.0 % 2 +" = (5.0 % 2) float Number and Number <br>" );
+     document.write((-5.5) % 2 +" = ((-5.5) % 2) float negative Number and Number <br>" );
+     document.write(5.5 % (-2.0) +" = (5.5 % (-2)) float Number and negative Number <br>" );
+     document.write(5.5 % 2 +" = (5.5 % 2) float Number and Number <br><br>" );
+     
+     document.write(" 6=> Exponentiation Operator in  JavaScript  <br><br>");
+     
+     document.write(10 ** 0.1 + " = (10 ** 0.1) Output <br>");
+     document.write(10 ** 0 + " = (10 ** 0) Output <br>");
+     document.write(2 ** (3 ** 2) + " = 2 ** (3 ** 2) Output <br>");
+     document.write(2 ** 3 ** 2 + " = 2 ** 3 ** 2 Output <br><br>");
+     
+      document.write(" 7=>  Increment (++) Operator in  JavaScript  <br><br>");
+      
+      var x = 5, y;
+      y=x++;
+      document.write("before postfix x= "+y+" , postfix result x = "+ x + 
+    		  " , prefix result x = "+ ++x+"<br><br>");
+      
+      
+      document.write(" 8=> Decrement (--) Operator in  JavaScript  <br><br>");
+      
+      var z = 5,z1;
+      z1 = z--;
+      document.write("Before Decrement value of z = "+z1+
+    		  " , After postfix Decrement value of z = "+z+   
+    		 " , After prefix Decrement value of z = "+ --z +"<br><br>");
+      
+      document.write(" 9=>  Unary negation (-) Operator in  JavaScript  <br><br>");
+      
+      var x1 = 5,y1 = '5',neg = -5;
+       x2 = -x1;
+      var y2 = -y1;
+       neg1 = -neg;
+       var x = false;
+       x3 = -x;
+       
+      document.write("String change in number y2 = "+ y2 + " , typeof y2 = "+ typeof y2 +  
+    		  " , Result of +value x1 = "+ x2 + 
+    		  " , Result of -value neg = "+neg1 +"<br><br>" +
+    		  " ,Change boolean into number type of x3 = "+typeof x3+" ,print  x3 value = "+x3+"<br><br>" );
+      
+      document.write(" 10=> Unary plus (+) Operator in  JavaScript  <br><br>");
+      
+      var s = -4, d = 5, c = true;
+      var s1  = +s, d1 = +d , c1 = +c ;
+      document.write("Negative can not convert in positive s = "+s1+ " positive d = "+d1+ " boolean value = "+c1+ "<br><br>");
+      
+}
+
+arithmaticExpression();
+
+function comparisonOperator(){
+	
+	 document.write(" 11=>  Equality operators  in  JavaScript  <br><br>");
+	 
+	 document.write( (1 == 1 )+" = (1 == 1 )<br>" );
+	 document.write( (5 == '5')+ "= (5 == '5')<br>");
+	 document.write((0 == false)+ "  = ( 0 == false)<br>");
+	 
+	 
+	 var obj1 = {'key' : 'krishna'}, obj2 = {'key' :'krishna'};
+	 document.write((obj1 == obj2)+ " = (obj1 == obj2)<br>");
+	 document.write((obj1 === obj2)+ " = (obj1 === obj2)<br>");
+	
+	document.write((false == undefined)+ " = (false == undifined)<br><br>");
+}
+
+comparisonOperator();
+
+function conditionalOperator(){
+	document.write("12=> Equality operators  in  JavaScript  <br><br>");
+	
+	
+	function ternory(flag){
+		return flag ? "krishna" : 'mohan';
+	}
+	document.write(ternory(true)+ " = using ternary operator<br><br>");
+	
+
+}
+conditionalOperator();
+
+document.write("13=> Destructuring assignment operators  in  JavaScript  <br><br>");
+
+var arry = [10 ,20 ,30 ,40 ,50 ,60];
+var [a , b , ...rest] = arry;
+document.write("a ="+a+" ,b ="+b+" ,rest ="+rest+"  ,arry = [10 ,20 ,30 ,40 ,50 ,60]"+"<br>");
+
+var a ,b;
+[a=3 , b=5] = [1];
+document.write("a = "+a+" ,b = "+b+" ,default Value [a=3 , b=5] = [1]<br>");
+
+var s = 1, s1 = 2;
+[s , s1] = [s1 , s];
+document.write( "s ="+s+ " s1="+s1+ " swaping value of s = 1, s1 = 2;<br>");
+
+
+
+
+
+</script>
+</body>
+</html>
