@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Instance body define </title>
+</head>
+<body>
+<b>Instance property must be define inside class body</b>
+<p id = 'ins'></p>
+
+
+<b>Static property must be define outSide  class body</b>
+<p id = 'stat'></p>
+
+
+<b>Boxing with prototype and static methods</b>
+<p id = "box"></p>
+
+<script type="text/javascript">
+
+class Abc{
+	constructor(name , age){
+		this.age = age ;
+		this.name = name;
+	}
+}
+ const obj = new Abc("krishna",26);
+ 
+ var print = document.querySelector('#ins');
+ print.textContent = "Instance Property  Name = "+ obj.name + " , Instance Property Age = "+obj.age +" year";
+
+ class StaticProperty{
+	 
+ }
+ 
+ StaticProperty.Width = 5;
+ 
+ 
+ var print = document.querySelector('stat');
+ print.textContent = StaticProperty;
+ 
+/*  
+ class Animal { 
+	  speak() {
+	    return this;
+	  }
+	  static eat() {
+	    return this; Not valid inside class this = undefined
+	  }
+	}
+ 
+ */ </script>
+</body>
+</html>

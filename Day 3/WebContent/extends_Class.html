@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>extends class in Js</title>
+</head>
+<body>
+
+<h3>The extends keyword is used in class declarations or 
+class expressions to create a class as a child of another class.</h3>
+<p id='extends'></p>
+
+<script type="text/javascript">
+
+class SupperClass{
+	constructor(name){
+		this.name = name;
+	}
+	show(){
+		return "Hi I am from SuperClass show() "+this.name;
+	}
+}
+
+class SubClass extends SupperClass{
+	construcetor(name){
+		super(name);
+	}
+	show(){
+		return "Hi I am from SubClass show() " +this.name;
+	}
+	
+}
+ let d = new SubClass("krishna");
+
+document.write(d.show());
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p id = 'hhh'></p>
+<script type="text/javascript">
+class Triple{
+	static getName(n){
+		if(n === undefined ){
+			n=1;
+		}
+		return n*3;
+	}
+	
+	}
+	class BiggerTripale estends Triple{
+		static getNam(n){
+			return super.getName(n) * super.getName(n);
+		}
+	}
+	//document.write(Triple.getName());
+	//document.write(BiggerTripale.getName());
+	document.querySelector('#hhh').textContent = Triple.getName();
+	var tp = new Triple();
+	
+	//document.write(BiggerTripale.getName(3));
+	
+</script>
+
+</body>
+</html>

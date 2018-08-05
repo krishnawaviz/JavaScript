@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>static method in class</title>
+</head>
+<body>
+<h3>Static method calls are made directly on the class and are not 
+callable on instances of the class.</h3>
+
+<p id ='stat'></p>
+
+<h3> Static Method  are not callable on instances of the class
+</h3>
+<p id = 'inst'></p>
+
+<script type="text/javascript">
+class StaticMethod{
+	
+	
+	static methodName(){
+		return 'Hello I Am Static Method() from Classs  StaticMethod ';
+	}
+}
+ new StaticMethod();
+ document.querySelector('#stat').textContent = StaticMethod.methodName();
+ 
+ 
+ class StaticMethodCall{
+	 
+	 
+	 static getStaticMethod(){
+		 return "Hello I am try to call static Method from Instance of the class  getStaticMethod() ";
+	 }
+ }
+ var staticCheck = new StaticMethodCall();
+ 
+ //document.querySelector('#inst').textContent = staticCheck.getStaticMethod();
+ 
+ document.querySelector('#inst').textContent = StaticMethodCall.getStaticMethod();
+</script>
+
+</body>
+</html>

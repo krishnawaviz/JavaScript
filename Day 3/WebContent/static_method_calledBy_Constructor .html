@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Static Method call </title>
+</head>
+<body>
+<h3>Static method call by constructor</h3>
+<p id="kri"></p>
+
+<script type="text/javascript">
+
+class StaticFromConstructor{
+	constructor(){
+		return this.constructor.staticMethod();
+	}
+	
+	
+	static staticMethod(){
+		return 'Hi I am called From Class constructor';
+	}
+}
+var print = new StaticFromConstructor();
+document.querySelector('#kri').textContent = print;
+</script>
+</body>
+</html>
