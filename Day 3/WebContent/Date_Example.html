@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>show date</title>
+</head>
+<body>
+<h3>It is Time  </h3>
+<p id = 'time'></p>
+
+<h3>Today Date is  </h3>
+<p id = 'date'></p>
+
+<script type="text/javascript">
+
+class MyDate extends Date {
+	constructor(){
+		super();
+	}
+	getDateFormat(){
+		var months = ['Jan','Fab','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+		return this.getDate() + '-'+months[this.getMonth()] + '-'+this.getFullYear();
+	}
+	getTimeFormat(){
+		return this.getHours()+" O'clock :"+this.getMinutes()+" Minutes";
+	}
+}
+
+var aDate = new MyDate();
+
+document.querySelector('#date').textContent = "Current  Date is = " +aDate.getDateFormat();
+document.querySelector('#time').textContent = "Current  Time is = " +aDate.getTimeFormat();
+
+</script>
+</body>
+</html>

@@ -5,8 +5,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p id = 'hhh'></p>
-<script type="text/javascript">
+	<h3>This is Parent class Static Method</h3>
+	<p id='hhh'></p>
+
+
+	<h3>This is Child Class Static Method</h3>
+	<p id='hhh1'></p>
+
+	<h3>This is not affected by parent's instantiation</h3>
+	<p id='hhh2'></p>
+
+	<h3>This is not affected by Child instantiation</h3>
+	<p id='hhh3'></p>
+
+
+	<script type="text/javascript">
 class Triple{
 	static getName(n){
 		if(n === undefined ){
@@ -16,17 +29,27 @@ class Triple{
 	}
 	
 	}
-	class BiggerTripale estends Triple{
-		static getNam(n){
+	class BiggerTripale extends Triple{
+		static getName(n){
 			return super.getName(n) * super.getName(n);
 		}
 	}
-	//document.write(Triple.getName());
-	//document.write(BiggerTripale.getName());
-	document.querySelector('#hhh').textContent = Triple.getName();
+	
+	
+	document.querySelector('#hhh').textContent = "This is called From Parent Class = "+Triple.getName();
+	
+	
+	document.querySelector('#hhh1').textContent = "This is called From Child Class = "+BiggerTripale.getName(5);
+	
+	
 	var tp = new Triple();
 	
-	//document.write(BiggerTripale.getName(3));
+ocument.querySelector('#hhh2').textContent = "This is not affected by parent's instantiation = "+tp.getName();
+	
+	
+	document.querySelector('#hhh3').textContent = "This is called From Child Class = "+tp.getName();
+	
+	
 	
 </script>
 

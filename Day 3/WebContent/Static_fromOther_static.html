@@ -6,6 +6,9 @@
 </head>
 <body>
 <h3>Static method call from other static method</h3>
+<p id = "staticall1"></p>
+
+<h3>Static method call from other static method</h3>
 <p id = "staticall"></p>
 
 <script type="text/javascript">
@@ -13,12 +16,13 @@
 class StaticExample {
 	
 	static staticMethod(){
-		return "Hi I am from first static method in the class";
+		return "Hi I am  first static method in the class";
 	}
 	static anotherStatic(){
 		return this.staticMethod()+ "   From another static method anotherStatic()";
 	}
 }
+document.querySelector('#staticall1').textContent = StaticExample.staticMethod();
 document.querySelector('#staticall').textContent = StaticExample.anotherStatic();
 </script>
 </body>

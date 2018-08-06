@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  Stack using Array</title>
+</head>
+<body>
+
+<h3>Total Elements in The Array </h3>
+<p id = 'array1'>
+
+<h3>Extends Built inns Array  </h3>
+<p id = 'array'>
+
+<script type="text/javascript">
+
+class Stack extends Array
+{
+	constructor(){
+		super();
+	}
+	top(){
+		return this[this.length - 1];
+	}
+	}
+	
+	var stack = new Stack();
+	stack.push("Krishna");
+	stack.push("Veer Singh");
+	stack.push("Shagun Arrora");
+	stack.push("Maneesh Sir");
+	stack.push("Arun Sir");
+	document.querySelector('#array').textContent = "Top Elements in Stack = "+stack.top();
+	document.querySelector('#array1').textContent = "Top Elements in Array = "+ stack;
+</script>
+
+</body>
+</html>

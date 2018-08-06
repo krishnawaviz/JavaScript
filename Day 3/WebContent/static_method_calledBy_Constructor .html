@@ -20,8 +20,8 @@ class StaticFromConstructor{
 		return 'Hi I am called From Class constructor';
 	}
 }
-var print = new StaticFromConstructor();
-document.querySelector('#kri').textContent = print;
+//var print = new StaticFromConstructor();
+document.querySelector('#kri').textContent = StaticFromConstructor.staticMethod();
 </script>
 </body>
 </html>
